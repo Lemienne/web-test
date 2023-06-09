@@ -1,0 +1,35 @@
+#page-wrapper {
+    width: 100%;
+}
+
+#header {
+    height: 64px;
+    left: 0; top: 0; right: 0;
+    background: linear-gradient(0deg, #131313, #131313), #595959;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.cont-left-profile {
+    background: skyblue;
+    height: 916px;
+    width: 282px;
+    flex: 0 0 282px;
+}
+
+.cont-middle-article {
+    background: blueviolet;
+    width: 1000px;
+    flex: 1;
+}
+
+.cont-right-nav {
+    background: greenyellow;
+    height: 916px;
+    width: 230px;
+    flex: 0 0 230px;
+}
