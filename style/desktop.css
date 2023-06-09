@@ -111,6 +111,20 @@ body {
     background: brown;
     margin: 8px 0 8px auto;
     flex: 0 1 367px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.header-themeChangeButton {
+
+}
+
+.header-searchbar {
+
+}
+
+.header-profile {
+
 }
 
 #page-logo-empty-2 {
