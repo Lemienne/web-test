@@ -104,4 +104,100 @@ body {
     background: brown;
     margin: 8px 0 8px auto;
     flex: 0 1 367px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/* 테마 변경 버튼 */
+.header-themeChangeButton {
+    width: 18px;
+    height: 21px;
+    background: #595959;
+    position: relative;
+    margin: 13px 21px 13px 0;
+    flex: 0 0 18px;
+}
+
+/* Google 검색창 */
+.header-searchbar {
+    width:242px;
+    height:35px;
+    position: relative;
+    margin: 7px 0 5px 0;
+    flex: 0 0 242px;
+    background: #595959;
+}
+.searchbar-img {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    /*margin: 5px 0 0 8px;*/
+}
+.bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:242px;
+    height:31px;
+    border-radius: 50px;
+    border:2px solid #dcdcdc;
+}
+.bar:hover{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+.bar:focus-within{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline:none;
+}
+.searchbar-main{
+    position: absolute;
+
+    left: 40px;
+    /*margin-left: 40px;*/
+    height:27px;
+    border:none;
+    width:185px;
+    font-size:16px;
+    background: #131313;
+    padding: 2.5px 0 0 0;
+    color: #ffffff;
+    outline: none;
+}
+.header-searchbar input::placeholder {
+    color: #ffffff;
+}
+
+/* 프로필 부분 */
+.header-profile {
+    width: 65px;
+    height: 47px;
+    margin-left: 21px;
+    position: relative;
+    flex: 0 0 65px;
+    background: #595959;
+}
+
+.h-profile-img-area {
+    width: 47px;
+    height: 47px;
+    position: absolute;
+    top: 0px; right: 18px;
+}
+
+.h-profile-img {
+    width: 47px;
+    height: 47px;
+}
+
+.h-profile-tri {
+    position: absolute;
+    top: 19px;
+    left: 53px;
+    width: 0px;
+    height: 0px;
+    border-bottom: calc(6px * 1.732) solid #FFFFFF;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    transform: rotate(180deg);
+
 }

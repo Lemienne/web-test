@@ -120,7 +120,9 @@ body {
     width: 18px;
     height: 21px;
     background: #595959;
+    position: relative;
     margin: 13px 21px 13px 0;
+    flex: 0 0 18px;
 }
 
 /* Google 검색창 */
@@ -129,6 +131,7 @@ body {
     height:35px;
     position: relative;
     margin: 7px 0 5px 0;
+    flex: 0 0 242px;
     background: #595959;
 }
 .searchbar-img {
@@ -177,6 +180,7 @@ body {
     height: 47px;
     margin-left: 21px;
     position: relative;
+    flex: 0 0 65px;
     background: #595959;
 }
 
