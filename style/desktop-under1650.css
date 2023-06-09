@@ -19,11 +19,27 @@ body {
     flex-flow: row nowrap;
 }
 
+/* 메인페이지 프로필 공간 */
 .cont-left-profile {
     background: skyblue;
     height: 1016px;
     width: 222px;
+    position: relative;
     flex: 0 0 222px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.container-profileImgArea {
+    width: 150px;
+    position: absolute;
+    left: 36px;
+    right: 36px;
+    top: 51px;
+}
+
+.profileImgArea-img {
+    width: 150px;
 }
 
 .cont-middle-article {
