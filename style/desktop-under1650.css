@@ -638,7 +638,7 @@ html, body {
     color: #C8C8C8;
     border-left: 1px solid #FFFFFF;
 }
-/*.page-tags {
+.page-tags {
     position: absolute;
     width: 230px;
     height: 233px;
@@ -657,7 +657,7 @@ html, body {
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    !* identical to box height, or 111% *!
+    /* identical to box height, or 111% */
 
     display: flex;
     align-items: center;
@@ -666,7 +666,7 @@ html, body {
 
     width: 110px;
     color: #C8C8C8;
-}*/
+}
 .page-tags-main_page {
     position: relative;
     width: 230px;
@@ -697,7 +697,7 @@ html, body {
     width: 110px;
     color: #C8C8C8;
 }
-/*.page-tags-about_web {
+.page-tags-about_web {
     position: absolute;
     width: 230px;
     height: 233px;
@@ -716,7 +716,7 @@ html, body {
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    !* identical to box height, or 111% *!
+    /* identical to box height, or 111% */
 
     display: flex;
     align-items: center;
@@ -745,7 +745,7 @@ html, body {
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    !* identical to box height, or 111% *!
+    /* identical to box height, or 111% */
 
     display: flex;
     align-items: center;
@@ -774,7 +774,7 @@ html, body {
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    !* identical to box height, or 111% *!
+    /* identical to box height, or 111% */
 
     display: flex;
     align-items: center;
@@ -803,7 +803,7 @@ html, body {
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    !* identical to box height, or 111% *!
+    /* identical to box height, or 111% */
 
     display: flex;
     align-items: center;
@@ -832,7 +832,7 @@ html, body {
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    !* identical to box height, or 111% *!
+    /* identical to box height, or 111% */
 
     display: flex;
     align-items: center;
@@ -861,7 +861,7 @@ html, body {
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    !* identical to box height, or 111% *!
+    /* identical to box height, or 111% */
 
     display: flex;
     align-items: center;
@@ -870,7 +870,7 @@ html, body {
 
     width: 110px;
     color: #C8C8C8;
-}*/
+}
 
 .tags-container {
     position: absolute;
