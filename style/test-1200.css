@@ -1,0 +1,120 @@
+body {
+    /* width: 1920px; */
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#page-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+#container {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+}
+
+.article-leftEmptySpace {
+    background: skyblue;
+    height: 1016px;
+    width: 210px;
+    flex: 0 1 210px;
+}
+
+.article-middleArticle {
+    background: blueviolet;
+    width: 1540px;
+    flex: 0 1 1540px;
+}
+
+.article-rightNavigation {
+    background: greenyellow;
+    height: 1016px;
+    width: 230px;
+    flex: 0 0 230px;
+    /* flex: 0 0 230px; */
+}
+
+/* Header 부분 */
+#header {
+    height: 64px;
+    left: 0; top: 0; right: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* background: linear-gradient(0deg, #131313, #131313), #595959; */
+    background: antiquewhite;
+}
+
+#page-logo-empty-1 {
+    width: 210px;
+    background: aqua;
+    flex: 0 1 210px;
+}
+
+#page-logo-container {
+    width: 1540px;
+    display: flex;
+    flex: 0 1 1540px;
+    flex-flow: row nowrap;
+}
+
+.page-logo-section {
+    width: 268px;
+    height: 35px;
+    margin: 14px 0;
+    flex: 0 1 268px;
+    background: #595959;
+}
+
+.page-logo-section a {
+    display: flex;
+    flex: 0 0 268px;
+    flex-flow: row nowrap;
+}
+
+.page-icon {
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-content: center;
+
+    background: #FAFAFA;
+    border-radius: 10px;
+}
+
+.page-title {
+    width: 233px;
+    height: 30px;
+    padding: 3px;
+    align-content: center;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.header-functions {
+    width: 367px;
+    height: 47px;
+    background: brown;
+    margin: 8px 0 8px auto;
+    flex: 0 1 367px;
+}
+
+#page-logo-empty-2 {
+    width: 230px;
+    flex: 0 0 230px;
+    background: aqua;
+}
