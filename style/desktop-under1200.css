@@ -200,7 +200,7 @@ html, body {
 
 /* 메인페이지 프로필 공간 */
 .cont-left-profile {
-    background: skyblue;
+    background: #131313;
     /*height: 1016px;*/
     width: 222px;
     position: relative;
