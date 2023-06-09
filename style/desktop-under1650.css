@@ -115,6 +115,7 @@ body {
     flex-flow: row nowrap;
 }
 
+/* 테마 변경 버튼 */
 .header-themeChangeButton {
     width: 18px;
     height: 21px;
@@ -122,7 +123,7 @@ body {
     margin: 13px 21px 13px 0;
 }
 
-/* Goolge 검색창 */
+/* Google 검색창 */
 .header-searchbar {
     width:242px;
     height:35px;
@@ -170,6 +171,7 @@ body {
     color: #ffffff;
 }
 
+/* 프로필 부분 */
 .header-profile {
     width: 65px;
     height: 47px;
