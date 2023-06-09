@@ -260,7 +260,7 @@ html, body {
 }
 
 .container-profileNavigationArea {
-    width: 167px;
+    width: 109px;
     height: 229px;
     margin-top: 35px;
     display: flex;
@@ -269,11 +269,25 @@ html, body {
 }
 
 .nav-home {
-    background-color: #131313;
+    position: relative;
+    width: 104px;
+    height: 30px;
+}
+
+.nav-home img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-right: 13px;
+    left: 0;
+    top: 0;
 }
 
 .nav-home span {
-    margin-top: 9px;
+    /*margin-top: 9px;*/
+    position: absolute;
+    top: 9px;
+    left: 40px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -284,10 +298,28 @@ html, body {
     align-items: center;
 
     color: #FFFFFF;
+}
+
+.nav-profile {
+    position: relative;
+    width: 108px;
+    height: 28px;
+    margin-top: 23px;
+}
+
+.nav-profile img {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    margin-right: 14px;
+    left: 0;
+    top: 0;
 }
 
 .nav-profile span {
-    margin-top: 25px;
+    position: absolute;
+    top: 5px;
+    left: 42px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -298,10 +330,28 @@ html, body {
     align-items: center;
 
     color: #FFFFFF;
+}
+
+.nav-pages {
+    position: relative;
+    width: 108px;
+    height: 27px;
+    margin-top: 23px;
+}
+
+.nav-pages img {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    margin-right: 14px;
+    left: 0;
+    top: 0;
 }
 
 .nav-pages span {
-    margin-top: 25px;
+    position: absolute;
+    top: 2px;
+    left: 43px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -312,10 +362,28 @@ html, body {
     align-items: center;
 
     color: #FFFFFF;
+}
+
+.nav-tages {
+    position: relative;
+    width: 108px;
+    height: 29px;
+    margin-top: 23px;
+}
+
+.nav-tages img {
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    margin-right: 14px;
+    left: 0;
+    top: 0;
 }
 
 .nav-tages span {
-    margin-top: 25px;
+    position: absolute;
+    top: 4px;
+    left: 43px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -328,8 +396,26 @@ html, body {
     color: #FFFFFF;
 }
 
+.nav-about {
+    position: relative;
+    width: 108px;
+    height: 28px;
+    margin-top: 23px;
+}
+
+.nav-about img {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    margin-right: 14px;
+    left: 0;
+    top: 0;
+}
+
 .nav-about span {
-    margin-top: 25px;
+    position: absolute;
+    top: 4px;
+    left: 44px;
 
     font-family: 'Inter';
     font-style: normal;
