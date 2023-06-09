@@ -171,6 +171,35 @@ body {
 }
 
 .header-profile {
+    width: 65px;
+    height: 47px;
+    margin-left: 21px;
+    position: relative;
+    background: #595959;
+}
+
+.h-profile-img-area {
+    width: 47px;
+    height: 47px;
+    position: absolute;
+    top: 0px; right: 18px;
+}
+
+.h-profile-img {
+    width: 47px;
+    height: 47px;
+}
+
+.h-profile-tri {
+    position: absolute;
+    top: 19px;
+    left: 53px;
+    width: 0px;
+    height: 0px;
+    border-bottom: calc(6px * 1.732) solid #FFFFFF;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    transform: rotate(180deg);
 
 }
 
