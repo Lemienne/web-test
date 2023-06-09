@@ -122,8 +122,52 @@ body {
     margin: 13px 21px 13px 0;
 }
 
+/* Goolge 검색창 */
 .header-searchbar {
+    width:242px;
+    height:35px;
+    position: relative;
+    margin: 7px 0 5px 0;
+    background: #595959;
+}
+.searchbar-img {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    /*margin: 5px 0 0 8px;*/
+}
+.bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:242px;
+    height:31px;
+    border-radius: 50px;
+    border:2px solid #dcdcdc;
+}
+.bar:hover{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+.bar:focus-within{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline:none;
+}
+.searchbar-main{
+    position: absolute;
 
+    left: 40px;
+    /*margin-left: 40px;*/
+    height:27px;
+    border:none;
+    width:185px;
+    font-size:16px;
+    background: #131313;
+    padding: 2.5px 0 0 0;
+    color: #ffffff;
+    outline: none;
+}
+.header-searchbar input::placeholder {
+    color: #ffffff;
 }
 
 .header-profile {
