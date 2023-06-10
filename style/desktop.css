@@ -467,6 +467,61 @@ html, body {
     background: blueviolet;
     width: 1468px;
     flex: 1;
+    overflow: hidden;
+}
+
+.article-title {
+    padding: 83px 0 0 30px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+
+
+    color: #FFFFFF;
+}
+
+.article-nickname {
+    display: flex;
+    flex-direction: row;
+}
+.article-nickname span:nth-child(1) {
+    padding: 29px 0 0 30px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.article-nickname span:nth-child(2) {
+    padding: 30px 0px 0px 3px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+
+    color: #BBBBBB;
+}
+
+.article-area {
+    margin-top: 48px;
+    margin-left: 30px;
+    background: #131313;
+    color: #c6c6c6;
+    line-height: 40px;
 }
 
 
