@@ -24,8 +24,7 @@ html, body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    /* background: linear-gradient(0deg, #131313, #131313), #595959; */
-    background: linear-gradient(0deg, #131313, #131313), #595959;;
+    background: linear-gradient(0deg, #131313, #131313), #595959;
 }
 
 #page-logo-empty-1 {
