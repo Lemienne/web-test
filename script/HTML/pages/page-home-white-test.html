@@ -6,11 +6,17 @@
         <meta name="description" content="개발자 Seunghyun Lee의 개인 페이지입니다." />
         <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1" />
         <link rel="stylesheet" type="text/css" href="../../style/reset-css.css" />
+        <link rel="stylesheet" type="text/css" href="../../style/mode-changer.css" />
+        <!-- Light Mode CSS -->
         <link rel="stylesheet" type="text/css" href="../../style/desktop/dark-desktop.css" media="screen and (min-width: 1650px)"/>
-        <link rel="stylesheet" type="text/css" href="../../style/desktop/dark-desktop-under1650.css" media="screen and (min-width: 1200px) and (max-width: 1649px)"/>
+        <link rel="stylesheet" type="text/css" id="wizcss" href="../../style/desktop/light-desktop-under1650.css" media="screen and (min-width: 1200px) and (max-width: 1649px)"/>
         <link rel="stylesheet" type="text/css" href="../../style/desktop/dark-desktop-under1200.css" media="screen and (min-width: 960px) and (max-width: 1199px)"/>
         <link rel="stylesheet" type="text/css" href="../../style/tablet/tablet.css" media="screen and (min-width: 768px) and (max-width: 959px)"/>
         <link rel="stylesheet" type="text/css" href="../../style/phone/phone.css" media="screen and (max-width: 767px)"/>
+        <!-- JavaScript Files -->
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="../../JavaScript/profile-fold-menu.js"></script>
+        <script src="../../JavaScript/darkmode-change-button.js"></script>
     </head>
     <body>
         <div id="page-wrapper">
@@ -20,14 +26,19 @@
                     <div class="page-logo-section">
                         <a href="page-home.html"  target="_self">
                             <div class="page-icon">
-                                <img src="../../../src/svg/homepage-icon-black.svg" alt="page icon">
+                                <img class="page-icon-icon" src="../../../src/svg/homepage-icon-black.svg" alt="page icon">
                             </div>
                             <div class="page-title">Seunghyun's Page</div>
                         </a>
                     </div>
                     <div class="header-functions">
                         <div class="header-themeChangeButton">
-                            <img src=../../../src/svg/Moon-black.svg alt="moon">
+                            <!--<a href="javascript:changeCSS('light-desktop-under1650')">
+                                <img src=../../../src/svg/Moon-black.svg alt="moon">
+                            </a>-->
+                            <button class="darkmode_btn" type="button">
+                                <img class="darkmode-moon" src=../../../src/svg/Moon-black.svg alt="moon">
+                            </button>
                         </div>
                         <div class="header-searchbar">
                             <div class="bar">
@@ -41,7 +52,20 @@
                             <div class="h-profile-img-area">
                                 <img class="h-profile-img" src="../../../src/png/profilereal.png" alt="profile-img">
                             </div>
-                            <div class="h-profile-tri"></div>
+                            <a href="#">
+                                <div class="h-profile-tri"></div>
+                            </a>
+                            <div class="profile-menu-area" style="display:none">
+                                <div class="pro-menu-info">
+                                    <a class="dropdown-nickname" href="#" target="_self">Seunghyun Lee</a>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="page-home.html" target="_self">Home</a>
+                                <a class="dropdown-item" href="page-profile.html" target="_self">Profile</a>
+                                <a class="dropdown-item" href="page-pages.html" target="_self">Pages</a>
+                                <a class="dropdown-item" href="page-tags.html" target="_self">Tags</a>
+                                <a class="dropdown-item" href="page-about.html" target="_self">About</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -62,135 +86,64 @@
 
                         <div class="nav-home">
                             <a href="page-home.html" target="_self">
-                                <img src="../../../src/svg/Home-icon-black.svg" alt="home-img">
-                                <span>Home</span>
+                                <img class="nav-home-icon" src="../../../src/svg/Home-icon-black.svg" alt="home-img">
+                                <span class="nav-home-span">Home</span>
                             </a>
                         </div>
 
                         <div class="nav-profile">
                             <a href="page-profile.html" target="_self">
-                                <img src="../../../src/svg/Profile-icon-black.svg" alt="profile-icon">
-                                <span>Profile</span>
+                                <img class="nav-profile-icon" src="../../../src/svg/Profile-icon-black.svg" alt="profile-icon">
+                                <span class="nav-profile-span">Profile</span>
                             </a>
                         </div>
 
                         <div class="nav-pages">
                             <a href="page-pages.html" target="_self">
-                                <img src="../../../src/svg/Pages-icon-black.svg" alt="pages-icon">
-                                <span>Pages</span>
+                                <img class="nav-pages-icon" src="../../../src/svg/Pages-icon-black.svg" alt="pages-icon">
+                                <span class="nav-pages-span">Pages</span>
                             </a>
                         </div>
 
                         <div class="nav-tages">
                             <a href="page-tags.html" target="_self">
-                                <img src="../../../src/svg/Tags-icon-black.svg" alt="tags-icon">
-                                <span>Tags</span>
+                                <img class="nav-tages-icon" src="../../../src/svg/Tags-icon-black.svg" alt="tags-icon">
+                                <span class="nav-tages-span">Tags</span>
                             </a>
                         </div>
 
                         <div class="nav-about">
                             <a href="page-about.html" target="_self">
-                                <img src="../../../src/svg/About-icon-black.svg" alt="about-icon">
-                                <span>About</span>
+                                <img class="nav-about-icon" src="../../../src/svg/About-icon-black.svg" alt="about-icon">
+                                <span class="nav-about-span">About</span>
                             </a>
                         </div>
                     </div>
                     <div class="container-profileFooterArea">
                         <div class="github-icon">
                             <a href="https://github.com/Lemienne" target="_blank">
-                                <img src="../../../src/svg/Github-icon-black.svg" alt="github icon">
+                                <img class="nav-github-icon" src="../../../src/svg/Github-icon-black.svg" alt="github icon">
                             </a>
                         </div>
                         <div class="mail-icon">
                             <a href="mailto:lemiennelee@gmail.com" target="_blank">
-                                <img src="../../../src/svg/Mail-icon-black.svg" alt="mail icon">
+                                <img class="nav-mail-icon" src="../../../src/svg/Mail-icon-black.svg" alt="mail icon">
                             </a>
                         </div>
                         <div class="theme_change-icon">
                             <a href="../../Theme_white/HTML/white_main-page.html" target="_self">
-                                <img src="../../../src/svg/Moon-black.svg" alt="theme change icon">
+                                <img class="nav-theme-change-icon" src="../../../src/svg/Moon-black.svg" alt="theme change icon">
                             </a>
                         </div>
                         <div class="search_web-icon">
                             <a href="page-search.html" target="_self">
-                                <img src="../../../src/svg/Search_icon-black.svg" alt="search web icon">
+                                <img class="nav-search-icon" src="../../../src/svg/Search_icon-black.svg" alt="search web icon">
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="cont-middle-article">
-                    <div class="article-title">
-                        Profile
-                    </div>
-                    <div class="article-nickname">
-                        <span>Lemienne</span>
-                        <span>&nbsp;·&nbsp; 2023년 5월 9일</span>
-                    </div>
-                    <div class="article-area">
-                        <div class="title-30px down-padding_34px">인삿말</div>
-                        <div class="normal-article down-padding_40px">
-                            <p class="down-padding_15px left-padding_2px">
-                                안녕하세요! 현재 건국대학교 글로컬 캠퍼스의 컴퓨터공학과 2학년에 재학 중인 이승현입니다!
-                            </p>
-                            <p class="down-padding_15px left-padding_2px">
-                                고등학생 때, 게임 개발에 흥미가 생겨 전공으로 컴퓨터공학과를 선택하였고, 현재는 게임 개발 뿐만 아니라 웹 개발에도 관심이 생겨 관련 분야도 공부 중에 있습니다.
-                                본 학교에서 경험하는 것들, 내딛는 걸음들이 실력 증진과 진로에 도움이 될 수 있게 노력하고 있습니다. 이를 위하여 저는 대학교를 다니며 풀 스택 개발 지식을 습득하고
-                                저만의 웹 사이트를 제작하는 것을 목표로 하고 있습니다.
-                            </p>
-                            <p class="down-padding_15px left-padding_2px">
-                                앞으로도 경쟁력 있는 개발자가 될 수 있도록 더욱 노력하겠습니다!
-                            </p>
-                            <hr class="dividing-article">
-                        </div>
-                        <div class="title-25px down-padding_10px">인적 사항</div>
-                        <div class="normal-article down-padding_20px">
-                            <div class="article-quote_box">
-                                <ul id="profile-list">
-                                    <li>이름: 이승현</li>
-                                    <li>나이: 21세</li>
-                                    <li>거주지: 인천광역시 부평구</li>
-                                    <li>이메일: lemiennelee@gmail.com</li>
-                                    <li>직업: 대학생</li>
-                                    <li>학번: 202221018</li>
-                                    <li>전공: 컴퓨터공학과</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="title-25px down-padding_10px">학력 사항</div>
-                        <div class="normal-article down-padding_19px">
-                            <div class="article-quote_box">
-                                <ul id="academic-list">
-                                    <li>구산초등학교</li>
-                                    <li>부흥중학교</li>
-                                    <li>부평고등학교</li>
-                                    <li>부평고등학교</li>
-                                    <li>건국대학교 글로컬 캠퍼스 컴퓨터공학과 2학년 재학 중</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="title-25px down-padding_10px">가족 사항</div>
-                        <div class="normal-article down-padding_19px">
-                            <div class="article-quote_box">
-                                <ul id="family-list">
-                                    <li>아버지</li>
-                                    <li>어머니</li>
-                                    <li>본인(첫째)</li>
-                                    <li>여동생(둘째)</li>
-                                    <li>남동생(셋째)</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="title-25px down-padding_10px">관심 분야</div>
-                        <div class="normal-article down-padding_19px">
-                            <div class="article-quote_box">
-                                <ul id="intrest-list">
-                                    <li>Web Development</li>
-                                    <li>Game Development</li>
-                                    <li>AI Chatbot</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="article-title">Welcome to Seunghyun's Page!</div>
                     <!--<script>
                         function doDisplay(){
                             var con = document.getElementById("myDIV");

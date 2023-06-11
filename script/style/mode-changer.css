@@ -1,0 +1,116 @@
+/* Header 부분 */
+
+.linear-gradient-dark {
+    background: linear-gradient(0deg, #131313, #131313), #595959 !important;
+}
+
+
+
+/* Background */
+.background-131313-dark {
+    background: #131313 !important;
+}
+
+.background-FAFAFA-dark {
+    background: #FAFAFA !important;
+}
+
+.background-202020-dark {
+    background:#202020 !important;
+}
+
+.background-272727-dark {
+    background:#272727 !important;
+}
+
+.background-ffffff-dark {
+    background:#ffffff !important;
+}
+
+.background-2F2E2E-dark {
+    background: #2F2E2E !important;
+}
+
+.background-3a3a3a-dark {
+    background: #3a3a3a !important;
+}
+
+.background-353535-dark {
+    background: #353535 !important;
+}
+
+
+/* background-color */
+.background-color-131313-dark {
+    background-color: #131313 !important;
+}
+
+.background-color-272727-dark {
+    background-color: #272727 !important;
+}
+
+
+
+
+/* Border */
+.border-595959-dark {
+    border: 1px solid #595959 !important;
+}
+
+.border-353535-dark {
+    border: 2px solid #353535 !important;
+}
+
+.border-top-e9ecef-dark {
+    border-top: 0.5px solid #e9ecef !important;
+}
+
+.border-left-ffffff-dark {
+    border-left: 1px solid #FFFFFF !important;
+}
+
+.border-left-92D8FF-dark {
+    border-left: solid 4px #92D8FF !important;
+}
+
+.border-color-272727-dark {
+    border-color: #272727 !important;
+}
+
+
+
+/* Font */
+.font-ffffff-dark {
+    color: #FFFFFF !important;
+}
+
+.font-92D8FF-dark {
+    color: #92D8FF !important;
+}
+
+.font-c6c6c6-dark {
+    color: #c6c6c6 !important;
+}
+
+.font-c8c8c8-dark {
+    color: #C8C8C8 !important;
+}
+
+.font-E7E7E7-dark {
+    color: #E7E7E7 !important;
+}
+
+.font-f9f9f9-dark {
+    color: #f9f9f9 !important;
+}
+
+
+
+.h-profile-tri-dark {
+    border-bottom: calc(6px * 1.732) solid #FFFFFF !important;
+}
+
+
+.filter-invert {
+    filter: none !important;
+}
