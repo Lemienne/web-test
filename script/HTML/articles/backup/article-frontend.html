@@ -6,11 +6,17 @@
         <meta name="description" content="개발자 Seunghyun Lee의 개인 페이지입니다." />
         <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1" />
         <link rel="stylesheet" type="text/css" href="../../style/reset-css.css" />
+        <link rel="stylesheet" type="text/css" href="../../style/mode-changer.css" />
+        <!-- Light Mode CSS -->
         <link rel="stylesheet" type="text/css" href="../../style/desktop/dark-desktop.css" media="screen and (min-width: 1650px)"/>
-        <link rel="stylesheet" type="text/css" href="../../style/desktop/dark-desktop-under1650.css" media="screen and (min-width: 1200px) and (max-width: 1649px)"/>
+        <link rel="stylesheet" type="text/css" id="wizcss" href="../../style/desktop/light-desktop-under1650.css" media="screen and (min-width: 1200px) and (max-width: 1649px)"/>
         <link rel="stylesheet" type="text/css" href="../../style/desktop/dark-desktop-under1200.css" media="screen and (min-width: 960px) and (max-width: 1199px)"/>
         <link rel="stylesheet" type="text/css" href="../../style/tablet/tablet.css" media="screen and (min-width: 768px) and (max-width: 959px)"/>
         <link rel="stylesheet" type="text/css" href="../../style/phone/phone.css" media="screen and (max-width: 767px)"/>
+        <!-- JavaScript Files -->
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="../../JavaScript/profile-fold-menu.js"></script>
+        <script src="../../JavaScript/darkmode-change-button.js"></script>
     </head>
     <body>
         <div id="page-wrapper">
@@ -78,30 +84,33 @@
                 <a id="top"></a>
                 <div class="article-middleArticle">
                     <div class="article-title">
-                        Back-end
-                        <img class="title-icon-back-end" src="../../../src/png/backend_black.png" alt="back-end">
+                        Front-end
+                        <img class="title-icon-front-end" src="../../../src/png/frontend_black.png" alt="web">
                     </div>
                     <div class="article-nickname">
                         <span class="article-nickname-span1">Lemienne</span>
                         <span class="article-nickname-span2">&nbsp;·&nbsp; 2023년 5월 9일</span>
                     </div>
                     <div class="article-area">
-                        <a id="what-is-backend"></a>
-                        <div class="title-30px down-padding_34px">What is Back-end?</div>
+                        <a id="frontend-and-backend"></a>
+                        <div class="title-30px down-padding_34px">Front-end & Back-end</div>
                         <div class="normal-article down-padding_40px">
                             <p class="normal-article-p down-padding_15px left-padding_2px">
-                                백엔드는 웹 사이트나 웹 애플리케이션 또는 모바일 솔루션의 프로세스와 관련된 서버 측(Server-side)과
-                                데이터베이스를 관리해주는 테크놀로지이다. 프론트엔드의 반대 말로, 백엔드는 눈에 보이지 않는 서버에서 작용하는 기술을 다룬다.
+                                프로그래밍에서 프론트엔드는 컴퓨터 소프트웨어에서 사용자와 상호작용하는 부분을 지칭한다. 그 반대로 백엔드는 사용자의 입력을 받고 처리하는 부분을 말한다.
+                                프론트엔드/백엔드는 거의 대부분 웹 프로그래밍을 지칭한다. 본 개념이 웹에만 존재하는 것은 아니지만 전 세계적으로 프론트엔드 백엔드는 거의 대부분 웹을 통칭한다.
                             </p>
                         </div>
-                        <a id="backend-development"></a>
-                        <div class="title-30px down-padding_34px">Back-end Development</div>
+                        <a id="what-is-frontend"></a>
+                        <div class="title-30px down-padding_34px">What is Front-end?</div>
                         <div class="normal-article down-padding_20px">
                             <p class="normal-article-p down-padding_15px left-padding_2px">
-                                백엔드는 서버 측 개발 분야로, 데이터를 저장하고 관리하며, 웹사이트의 클라이언트 측에서 모든 것이 매끄럽게 작동할 수 있게 해준다.
-                                백엔드는 사용자들이 직접 보거나 상호작용할 수는 없지만, 프론트엔드에 있는 사용자들이 취하는 행동들을 처리하는 역할을 수행한다.
-                                즉 사용자들은 백엔드에 직접적으로가 아닌, 간접적으로 백엔드에 엑세스하게 되는 것이다. 백엔드 개발에는 사용자 인터페이스가 없는 시스템 컴퓨넌트 작업,
-                                API 작성, 라이브러리 생성, 데이터베이스 통합 등 다양한 활동들이 포함되어 있다.
+                                프론트엔드는 주로 웹에서 사용자 인터페이스 부분을 명칭한다. 따라서 프론트엔드 개발자들은 백엔드 API에서 가져온 데이터의 출력,
+                                입력을 통한 비즈니스 로직 구성과 사용자와 대화하는 사용자 인터페이스 부분을 작업하는 개발자를 말한다.
+                            </p>
+                            <p class="normal-article-p down-padding_15px left-padding_2px">
+                                프론트엔드 개발은 주로 웹 및 모바일 솔루션의 사용자 인터페이스(UI)와 사용자 경험(UX)을 만드는데 초점을 맞추고 있다. 슬라이더,
+                                드롭다운(drop-down) 메뉴, 폰트, 레이아웃, 컬러 등 모든 요소가 프론트엔드 개발을 이루는 부분이다.
+                                매력적인 프론트엔드를 만드는 데는 HTML, CSS, JavaScript가 중요한 역할을 한다.
                             </p>
                             <hr class="dividing-article">
                         </div>
@@ -109,76 +118,58 @@
                         <div class="title-30px down-padding_34px">Programming Languages</div>
                         <div class="normal-article down-padding_19px">
                             <p class="normal-article-p down-padding_25px left-padding_2px">
-                                프론트엔드에 비해 백엔드는 선택의 폭이 상당히 넓다고 할 수 있다. 어떤 언어라도 개발이 충분히 가능한 편이기에 언어에 개발이 크게 좌우되는 편이 아니다.
-                                그렇기에 백엔드에서는 해당 언어가 가진 특성과 작업물 및 작업 방향과의 일치성 등을 고려하여 선택하는 것이 좋다.
-                                기업에서도 다양한 언어와 프레임워크들이 백엔드 개발에 사용되고 있다.
+                                프론트엔드 개발에서 사용하는 언어는 상당히 한정적으로, 대표적으로 HTML, CSS, Javascript가 있다. 간략히 요약하자면,
+                                HTML은 웹 페이지의 구조, CSS는 스타일을, JavaScript는 웹의 동적 반응을 담당한다. 이 셋이 현대 웹의 표준으로서 웹을 이루고 있다.
                             </p>
                         </div>
-                        <a id="php"></a>
+                        <a id="html"></a>
                         <div class="title-30px down-padding_34px">
-                            PHP
-                            <img class="article-icon-PHP" src="../../../src/png/php.png" alt="PHP">
+                            HTML
+                            <img class="article-icon-HTML" src="../../../src/png/HTML.png" alt="HTML">
                         </div>
                         <div class="normal-article down-padding_19px">
                             <p class="normal-article-p down-padding_20px left-padding_2px">
-                                PHP(Hypertext Preprocessor)는 개발을 위해서 고안된 서버 측 스크립트 언어이자 수많은 웹 시스템의 기반이 되는 언어이다.
-                                우리나라에서도 다수의 인터넷 쇼핑몰, 커뮤니티 등이 PHP거나 PHP 기반으로 제작되어 있다.
-                            </p>
-                            <p class="normal-article-p down-padding_20px left-padding_2px">
-                                PHP는 브라우저에서 요청한 웹 페이지, 즉 서버에 있는 데이터가 사용자와 상호작용하는 웹 어플리케이션으로 진화하여 브라우저로 넘어가도록 처리하는 데 필요하다.
-                                PHP로 작성된 코드를 HTML 코드 안에 추가하면 웹 서버는 해당 코드를 해석하여 자동으로 HTML 문서를 생성하기에 동적으로 빠르게 HTML 문서를 만들 수 있다.
+                                HTML(Hyper Text Markup Language) 이름 그대로 하이퍼텍스트와 마크업 언어로 구성되어 있다.
                             </p>
                             <p class="normal-article-p down-padding_25px left-padding_2px">
-                                이처럼 PHP는 HTML을 프로그래밍적으로 생성해 주고, 데이터베이스와 상호작용 하면서 데이터를 저장하고, 표현하는 서버와 브라우저 간의 다리 역할을 한다고 볼 수도 있다.
+                                하이퍼텍스트는 웹 페이지들 사이의 연결(Hyperlink)를 나타낸다.
+                                반면 마크업 언어는 데이터를 기술하는 언어이다. 한마디로 문서가 화면에 표시되는 형식을 나타내거나 데이터의 논리적인 구조를 명시하기 위한 규칙들을 정의한 언어의 일종이라 할 수 있다.
+                                그리하여 웹 페이지에 문단, 동영상, 제목, 표 등을 정의하고 그 구조와 의미를 정의하는 데 사용된다.
                             </p>
                         </div>
-                        <a id="java"></a>
+                        <a id="css"></a>
                         <div class="title-30px down-padding_34px">
-                            Java
-                            <img class="article-icon-Java" src="../../../src/png/java.png" alt="=Java">
+                            CSS
+                            <img class="article-icon-CSS" src="../../../src/png/CSS.png" alt="=CSS">
                         </div>
                         <div class="normal-article down-padding_19px">
                             <p class="normal-article-p down-padding_20px left-padding_2px">
-                                Java는 가장 인기 있는 프로그래밍 언어 중 하나이다. 객체지향 프로그래밍 언어인 자바의 가장 큰 특징은 플랫폼 종속성이 낮다는 것이다.<br>
-                                운영체제에 Java Virtual Machine(JVM)을 설치하면 Java 기반 프로그램은 어떤 환경에서도 완벽하게 똑같이 동작한다.<br>
-                                이유로는 가상머신이 각각의 운영체제에 맞춰서 돌아갈 수 있도록 제작되었기 때문이다.
-                                프론트엔드에서 JavaScript는 HTML과 CSS가 존재한다는 가정하에 실행되었는데, Java는 특정 플랫폼에 의존하지 않는 독립성을 갖추고 있다.
-                                생산성과 안정성, 기기 호환성이 높고 소스코드 가독성이 좋아 개발자 커뮤니티에서 널리 사용되고 있다.
+                                CSS 종속 스타일 시트(Cascading Style Sheet)의 약자이다.
                             </p>
                             <p class="normal-article-p down-padding_25px left-padding_2px">
-                                특히 Java는 Spring이라는 성능이 매우 좋은 웹 프레임워크를 지원한다.
-                                이 Spring은 한국 전자정부표준프레임워크의 기반기술이며 한국정보화진흥원에서는 공공이관의 웹 서비스 제공시 Spring을 권장할 정도로 인지도가 높은
-                                프레임워크이기에 한국에서 Java는 백엔드에서 많은 사랑받고 있다.
+                                스타일 시트라는 단어에서 유추할 수 있듯이 CSS는 마크업으로 작성된 것이
+                                실제로 화면에 어떻게 보이는지 그 스타일(표현)을 정해 주는 언어이다. 즉, HTML 콘텐츠를 크기, 색상, 위치 변경 등으로 예쁘게 꾸미는 디자인 역할을 수행한다.
+                                CSS의 사용으로 구조와 표현이 함께 움직이는 것이 아닌 서로 분리될 수도 있다. CSS는 개발자가 웹페이지에 다양한 스타일을 적용할 수 있게 해줌으로써
+                                애플리케이션 페이지를 표현하는 프로세스를 보다 단순하게 만들어 줍니다. CSS는 또한 한번에 여러 웹 페이지의 레이아웃을 제어할 수 있어
+                                일일이 디자인을 적용해야 할 수고로움을 덜어둔다.
                             </p>
                         </div>
-                        <a id="nodejs"></a>
+                        <a id="javascript"></a>
                         <div class="title-30px down-padding_34px">
-                            Node.js
-                            <img class="article-icon-Nodejs" src="../../../src/png/nodejs.png" alt="Node.js">
+                            JavaScript
+                            <img class="article-icon-JavaScript" src="../../../src/png/JavaScript.png" alt="JavaScript">
                         </div>
                         <div class="normal-article down-padding_19px">
                             <p class="normal-article-p down-padding_20px left-padding_2px">
-                                JavaScript는 Node.js라는 크로스 플랫폼의 오픈소스 런타임 환경 덕분에 백엔드 서비스 개발에도 사용할 수 있게 되었다.</p>
+                                JavaScript HTML과 CSS를 통해 만들어진 웹 페이지가 사용자와 상호작용하여 동작할 수 있도록 만들어주는 언어이다.
+                            </p>
                             <p class="normal-article-p down-padding_20px left-padding_2px">
-                                Node는 브라우저 외부에서 JavaScript를 실행할 수 있게 하여 JavaScript가 웹 브라우저를 벗어나 모바일이나 웹 애플리케이션용 API와 같은
-                                백엔드 서비스 개발에도 사용되는 범용 프로그래밍 언어가 될 수 있게 되었다.
-                                Node.js는 내장 HTTP 서버 라이브러리를 포함하고 있어 웹 서버에서 별도의 소프트웨어 없이 동작하는 것이 가능하다.
-                                확장성이 뛰어나고 반응속도가 빠르며, 많은 양의 요청도 처리 가능하기에 웹 서버의 동작을 더욱 효과적으로 통제할 수 있다.
+                                사용자들을 위해 상호작용하는 애플리케이션은 JavaScript를 통해 구현 가능하게 된 것이라 볼 수 있다.
+                                JavaScript는 어마어마한 인기를 가진 언어로써, 객체 기반 언어이기에 객체 지향형 프로그래밍과 함수형 프로그래밍 모두를 표현할 수 있다.
+                                게다가 동적이며 소스 코드를 직접 해석하여 바로 실행할 수 있는 인터프리터 언어이기 때문에 타입을 명시할 필요가 없다는 특성을 가지고 있다.
                             </p>
-                            <p class="normal-article-p down-padding_25px left-padding_2px">
-                                하지만 언어가 아니라 소프트웨어 플랫폼이어서 그 자체로는 아무것도 못하고 서버를 직접 구현해야 한다는 특징을 가지고 있다.
-                            </p>
-                        </div>
-                        <a id="python"></a>
-                        <div class="title-30px down-padding_34px">
-                            Python
-                            <img class="article-icon-Python" src="../../../src/png/python.png" alt="Python">
-                        </div>
-                        <div class="normal-article down-padding_19px">
-                            <p class="normal-article-p down-padding_25px left-padding_2px">
-                                Python은 개발자들이 시스템을 효율적으로 통합하고, 빠르게 작업할 수 있게 해주는 프로그래밍 언어이다.
-                                파이썬은 딥러닝, 데이터 사이언스, 인공지능 분야에서 많이 사용되는데 Django 혹은 Flask와 같은 웹 프레임워크랑 사용되어
-                                백엔드 서버를 구현하는데 사용되기도 한다. 실제로 Python을 백엔드 언어로 사용 중인 기업으로는 Instagram, 번개장터, Reddit, Pinterest 등이 있다.
+                            <p class="down-padding_25px left-padding_2px">
+                                그렇기에 웹 사이트의 기능성을 향상하는데 사용되며, 웹 기반의 소프트웨어 또는 게임들을 실행할 수 있게 해 주는 역할을 한다.
                             </p>
                         </div>
                         <div class="article-footer-nav">
@@ -188,27 +179,27 @@
                                 <a href="../pages/page-tags-web.html" target="_self">
                                     <div class="tag-web">Web</div>
                                 </a>
-                                <a href="../pages/page-tags-backend.html" target="_self">
-                                    <div class="tag-back-end">Back-end</div>
+                                <a href="../pages/page-tags-frontend.html" target="_self">
+                                    <div class="tag-frontend">Front-end</div>
                                 </a>
                             </div>
                             <div class="footer-nav-article-nav">
-                                <a href="article-frontend.html" target="_self">
+                                <a href="article-about-web.html" target="_self">
                                     <div class="footer-pre-article">
                                         <div class="pre-article-left_arrow">
                                             <img src="../../../src/svg/circle-arrow-left.svg" alt="circle arrow left">
                                         </div>
                                         <div class="pre-article-text-area">
                                             <p class="pre-article-title">이전 포스트</p>
-                                            <p class="pre-article-ex">Front-end</p>
+                                            <p class="pre-article-ex">About Web</p>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="article-framework.html" target="_self">
+                                <a href="article-backend.html" target="_self">
                                     <div class="footer-next-article">
                                         <div class="next-article-text-area">
                                             <p class="next-article-title">다음 포스트</p>
-                                            <p class="next-article-ex">Web Framework</p>
+                                            <p class="next-article-ex">Back-end</p>
                                         </div>
                                         <div class="next-article-right_arrow">
                                             <img src="../../../src/svg/circle-arrow-right.svg" alt="circle arrow right">
@@ -221,15 +212,14 @@
                 </div>
                 <div class="article-rightNavigation">
                     <div class="in-this-webpage">
-                        <span>In this Article</span>
-                        <div class="webpage-container-backend">
-                            <a href="#what-is-backend" target="_self">What is Backend?</a><br>
-                            <a href="#backend-development" target="_self">Back-end Development</a><br>
+                        <span>In this article</span>
+                        <div class="webpage-container-frontend">
+                            <a href="#frontend-and-backend" target="_self">Front-end & Back-end</a><br>
+                            <a href="#what-is-frontend" target="_self">What is Front-end?</a><br>
                             <a href="#programming-languages" target="_self">Programming Languages</a><br>
-                            <a href="#php" target="_self">PHP</a><br>
-                            <a href="#java" target="_self">Java</a><br>
-                            <a href="#nodejs" target="_self">Node.js</a><br>
-                            <a href="#python" target="_self">Python</a><br>
+                            <a href="#html" target="_self">HTML</a><br>
+                            <a href="#css" target="_self">CSS</a><br>
+                            <a href="#javascript" target="_self">JavaScript</a><br>
                         </div>
                     </div>
                     <div class="page-tags-main_page">
