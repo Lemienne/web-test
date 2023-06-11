@@ -198,11 +198,11 @@ $(document).ready(function(){
             $(".tag-frontend").removeClass("background-353535-dark font-92D8FF-dark");
             $(".tag-back-end").removeClass("background-353535-dark font-92D8FF-dark");
             $(".footer-pre-article").removeClass("background-353535-dark");
-            $(".pre-article-title").removeClass("background-ffffff-dark");
-            $(".pre-article-ex").removeClass("background-ffffff-dark");
+            $(".pre-article-title").removeClass("font-ffffff-dark");
+            $(".pre-article-ex").removeClass("font-ffffff-dark");
             $(".footer-next-article").removeClass("background-353535-dark");
-            $(".next-article-title").removeClass("background-ffffff-dark");
-            $(".next-article-ex").removeClass("background-ffffff-dark");
+            $(".next-article-title").removeClass("font-ffffff-dark");
+            $(".next-article-ex").removeClass("font-ffffff-dark");
             $(".article-content-area").removeClass("linear-gradient-dark");
             $(".article-area-content_page").removeClass("background-131313-dark font-c6c6c6-dark");
 
@@ -234,11 +234,21 @@ $(document).ready(function(){
             $(".academic-list-li").removeClass("font-ffffff-dark");
             $(".family-list-li").removeClass("font-ffffff-dark");
             $(".intrest-list-li").removeClass("font-ffffff-dark");
+            $(".article-leftEmptySpace").removeClass("background-131313-dark");
+            $(".article-middleArticle").removeClass("background-131313-dark");
+            $(".article-rightNavigation").removeClass("background-131313-dark");
+
             $(".").removeClass("filter-invert");
             $(".").removeClass("filter-invert");
             $(".").removeClass("filter-invert");
             $(".").removeClass("filter-invert");
             $(".").removeClass("filter-invert");
+            $(".").removeClass("filter-invert");
+            $(".").removeClass("filter-invert");
+            $(".").removeClass("filter-invert");
+            $(".").removeClass("filter-invert");
+            $(".").removeClass("filter-invert");
+
 
 
             // $(".").removeClass("");
@@ -299,11 +309,11 @@ $(document).ready(function(){
             $(".tag-frontend").addClass("background-353535-dark font-92D8FF-dark");
             $(".tag-back-end").addClass("background-353535-dark font-92D8FF-dark");
             $(".footer-pre-article").addClass("background-353535-dark");
-            $(".pre-article-title").addClass("background-ffffff-dark");
-            $(".pre-article-ex").addClass("background-ffffff-dark");
+            $(".pre-article-title").addClass("font-ffffff-dark");
+            $(".pre-article-ex").addClass("font-ffffff-dark");
             $(".footer-next-article").addClass("background-353535-dark");
-            $(".next-article-title").addClass("background-ffffff-dark");
-            $(".next-article-ex").addClass("background-ffffff-dark");
+            $(".next-article-title").addClass("font-ffffff-dark");
+            $(".next-article-ex").addClass("font-ffffff-dark");
             $(".article-content-area").addClass("linear-gradient-dark");
             $(".article-area-content_page").addClass("background-131313-dark font-c6c6c6-dark");
             $(".page-icon-icon").addClass("filter-invert");
@@ -334,6 +344,9 @@ $(document).ready(function(){
             $(".academic-list-li").addClass("font-ffffff-dark");
             $(".family-list-li").addClass("font-ffffff-dark");
             $(".intrest-list-li").addClass("font-ffffff-dark");
+            $(".article-leftEmptySpace").addClass("background-131313-dark");
+            $(".article-middleArticle").addClass("background-131313-dark");
+            $(".article-rightNavigation").addClass("background-131313-dark");
         }
     })
 });
