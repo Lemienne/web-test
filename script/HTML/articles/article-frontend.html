@@ -6,10 +6,17 @@
         <meta name="description" content="개발자 Seunghyun Lee의 개인 페이지입니다." />
         <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1" />
         <link rel="stylesheet" type="text/css" href="../../style/reset-css.css" />
-        <link rel="stylesheet" type="text/css" href="../../style/desktop/dark-article-1200.css" media="screen and (min-width: 1200px)"/>
-        <link rel="stylesheet" type="text/css" href="../../style/desktop/dark-article-under1200.css" media="screen and (min-width: 960px) and (max-width: 1199px)"/>
+        <link rel="stylesheet" type="text/css" href="../../style/mode-changer.css" />
+        <!-- Light Mode CSS -->
+        <link rel="stylesheet" type="text/css" href="../../style/desktop/dark-desktop.css" media="screen and (min-width: 1650px)"/>
+        <link rel="stylesheet" type="text/css" id="wizcss" href="../../style/desktop/light-desktop-under1650.css" media="screen and (min-width: 1200px) and (max-width: 1649px)"/>
+        <link rel="stylesheet" type="text/css" href="../../style/desktop/dark-desktop-under1200.css" media="screen and (min-width: 960px) and (max-width: 1199px)"/>
         <link rel="stylesheet" type="text/css" href="../../style/tablet/tablet.css" media="screen and (min-width: 768px) and (max-width: 959px)"/>
         <link rel="stylesheet" type="text/css" href="../../style/phone/phone.css" media="screen and (max-width: 767px)"/>
+        <!-- JavaScript Files -->
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="../../JavaScript/profile-fold-menu.js"></script>
+        <script src="../../JavaScript/darkmode-change-button.js"></script>
     </head>
     <body>
         <div id="page-wrapper">
@@ -81,14 +88,14 @@
                         <img class="title-icon-front-end" src="../../../src/png/frontend_black.png" alt="web">
                     </div>
                     <div class="article-nickname">
-                        <span>Lemienne</span>
-                        <span>&nbsp;·&nbsp; 2023년 5월 11일</span>
+                        <span class="article-nickname-span1">Lemienne</span>
+                        <span class="article-nickname-span2">&nbsp;·&nbsp; 2023년 5월 9일</span>
                     </div>
                     <div class="article-area">
                         <a id="frontend-and-backend"></a>
                         <div class="title-30px down-padding_34px">Front-end & Back-end</div>
                         <div class="normal-article down-padding_40px">
-                            <p class="down-padding_15px left-padding_2px">
+                            <p class="normal-article-p down-padding_15px left-padding_2px">
                                 프로그래밍에서 프론트엔드는 컴퓨터 소프트웨어에서 사용자와 상호작용하는 부분을 지칭한다. 그 반대로 백엔드는 사용자의 입력을 받고 처리하는 부분을 말한다.
                                 프론트엔드/백엔드는 거의 대부분 웹 프로그래밍을 지칭한다. 본 개념이 웹에만 존재하는 것은 아니지만 전 세계적으로 프론트엔드 백엔드는 거의 대부분 웹을 통칭한다.
                             </p>
@@ -96,11 +103,11 @@
                         <a id="what-is-frontend"></a>
                         <div class="title-30px down-padding_34px">What is Front-end?</div>
                         <div class="normal-article down-padding_20px">
-                            <p class="down-padding_15px left-padding_2px">
+                            <p class="normal-article-p down-padding_15px left-padding_2px">
                                 프론트엔드는 주로 웹에서 사용자 인터페이스 부분을 명칭한다. 따라서 프론트엔드 개발자들은 백엔드 API에서 가져온 데이터의 출력,
                                 입력을 통한 비즈니스 로직 구성과 사용자와 대화하는 사용자 인터페이스 부분을 작업하는 개발자를 말한다.
                             </p>
-                            <p class="down-padding_15px left-padding_2px">
+                            <p class="normal-article-p down-padding_15px left-padding_2px">
                                 프론트엔드 개발은 주로 웹 및 모바일 솔루션의 사용자 인터페이스(UI)와 사용자 경험(UX)을 만드는데 초점을 맞추고 있다. 슬라이더,
                                 드롭다운(drop-down) 메뉴, 폰트, 레이아웃, 컬러 등 모든 요소가 프론트엔드 개발을 이루는 부분이다.
                                 매력적인 프론트엔드를 만드는 데는 HTML, CSS, JavaScript가 중요한 역할을 한다.
@@ -110,7 +117,7 @@
                         <a id="programming-languages"></a>
                         <div class="title-30px down-padding_34px">Programming Languages</div>
                         <div class="normal-article down-padding_19px">
-                            <p class="down-padding_25px left-padding_2px">
+                            <p class="normal-article-p down-padding_25px left-padding_2px">
                                 프론트엔드 개발에서 사용하는 언어는 상당히 한정적으로, 대표적으로 HTML, CSS, Javascript가 있다. 간략히 요약하자면,
                                 HTML은 웹 페이지의 구조, CSS는 스타일을, JavaScript는 웹의 동적 반응을 담당한다. 이 셋이 현대 웹의 표준으로서 웹을 이루고 있다.
                             </p>
@@ -121,10 +128,10 @@
                             <img class="article-icon-HTML" src="../../../src/png/HTML.png" alt="HTML">
                         </div>
                         <div class="normal-article down-padding_19px">
-                            <p class="down-padding_20px left-padding_2px">
+                            <p class="normal-article-p down-padding_20px left-padding_2px">
                                 HTML(Hyper Text Markup Language) 이름 그대로 하이퍼텍스트와 마크업 언어로 구성되어 있다.
                             </p>
-                            <p class="down-padding_25px left-padding_2px">
+                            <p class="normal-article-p down-padding_25px left-padding_2px">
                                 하이퍼텍스트는 웹 페이지들 사이의 연결(Hyperlink)를 나타낸다.
                                 반면 마크업 언어는 데이터를 기술하는 언어이다. 한마디로 문서가 화면에 표시되는 형식을 나타내거나 데이터의 논리적인 구조를 명시하기 위한 규칙들을 정의한 언어의 일종이라 할 수 있다.
                                 그리하여 웹 페이지에 문단, 동영상, 제목, 표 등을 정의하고 그 구조와 의미를 정의하는 데 사용된다.
@@ -136,10 +143,10 @@
                             <img class="article-icon-CSS" src="../../../src/png/CSS.png" alt="=CSS">
                         </div>
                         <div class="normal-article down-padding_19px">
-                            <p class="down-padding_20px left-padding_2px">
+                            <p class="normal-article-p down-padding_20px left-padding_2px">
                                 CSS 종속 스타일 시트(Cascading Style Sheet)의 약자이다.
                             </p>
-                            <p class="down-padding_25px left-padding_2px">
+                            <p class="normal-article-p down-padding_25px left-padding_2px">
                                 스타일 시트라는 단어에서 유추할 수 있듯이 CSS는 마크업으로 작성된 것이
                                 실제로 화면에 어떻게 보이는지 그 스타일(표현)을 정해 주는 언어이다. 즉, HTML 콘텐츠를 크기, 색상, 위치 변경 등으로 예쁘게 꾸미는 디자인 역할을 수행한다.
                                 CSS의 사용으로 구조와 표현이 함께 움직이는 것이 아닌 서로 분리될 수도 있다. CSS는 개발자가 웹페이지에 다양한 스타일을 적용할 수 있게 해줌으로써
@@ -153,10 +160,10 @@
                             <img class="article-icon-JavaScript" src="../../../src/png/JavaScript.png" alt="JavaScript">
                         </div>
                         <div class="normal-article down-padding_19px">
-                            <p class="down-padding_20px left-padding_2px">
+                            <p class="normal-article-p down-padding_20px left-padding_2px">
                                 JavaScript HTML과 CSS를 통해 만들어진 웹 페이지가 사용자와 상호작용하여 동작할 수 있도록 만들어주는 언어이다.
                             </p>
-                            <p class="down-padding_20px left-padding_2px">
+                            <p class="normal-article-p down-padding_20px left-padding_2px">
                                 사용자들을 위해 상호작용하는 애플리케이션은 JavaScript를 통해 구현 가능하게 된 것이라 볼 수 있다.
                                 JavaScript는 어마어마한 인기를 가진 언어로써, 객체 기반 언어이기에 객체 지향형 프로그래밍과 함수형 프로그래밍 모두를 표현할 수 있다.
                                 게다가 동적이며 소스 코드를 직접 해석하여 바로 실행할 수 있는 인터프리터 언어이기 때문에 타입을 명시할 필요가 없다는 특성을 가지고 있다.
