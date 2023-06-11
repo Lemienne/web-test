@@ -6,17 +6,11 @@
         <meta name="description" content="개발자 Seunghyun Lee의 개인 페이지입니다." />
         <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1" />
         <link rel="stylesheet" type="text/css" href="../../style/reset-css.css" />
-        <link rel="stylesheet" type="text/css" href="../../style/mode-changer.css" />
-        <!-- Light Mode CSS -->
         <link rel="stylesheet" type="text/css" href="../../style/desktop/dark-desktop.css" media="screen and (min-width: 1650px)"/>
-        <link rel="stylesheet" type="text/css" id="wizcss" href="../../style/desktop/light-desktop-under1650.css" media="screen and (min-width: 1200px) and (max-width: 1649px)"/>
+        <link rel="stylesheet" type="text/css" href="../../style/desktop/dark-desktop-under1650.css" media="screen and (min-width: 1200px) and (max-width: 1649px)"/>
         <link rel="stylesheet" type="text/css" href="../../style/desktop/dark-desktop-under1200.css" media="screen and (min-width: 960px) and (max-width: 1199px)"/>
         <link rel="stylesheet" type="text/css" href="../../style/tablet/tablet.css" media="screen and (min-width: 768px) and (max-width: 959px)"/>
         <link rel="stylesheet" type="text/css" href="../../style/phone/phone.css" media="screen and (max-width: 767px)"/>
-        <!-- JavaScript Files -->
-        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-        <script src="../../JavaScript/profile-fold-menu.js"></script>
-        <script src="../../JavaScript/darkmode-change-button.js"></script>
     </head>
     <body>
         <div id="page-wrapper">
@@ -24,18 +18,16 @@
                 <div id="page-logo-empty-1"></div>
                 <div id="page-logo-container">
                     <div class="page-logo-section">
-                        <a href="page-home.html" target="_self">
+                        <a href="page-home.html"  target="_self">
                             <div class="page-icon">
-                                <img class="page-icon-icon" src="../../../src/svg/homepage-icon-black.svg" alt="page icon">
+                                <img src="../../../src/svg/homepage-icon-black.svg" alt="page icon">
                             </div>
                             <div class="page-title">Seunghyun's Page</div>
                         </a>
                     </div>
                     <div class="header-functions">
                         <div class="header-themeChangeButton">
-                            <button class="darkmode_btn" type="button">
-                                <img class="darkmode-moon" src=../../../src/svg/Moon-black.svg alt="moon">
-                            </button>
+                            <img src=../../../src/svg/Moon-black.svg alt="moon">
                         </div>
                         <div class="header-searchbar">
                             <div class="bar">
@@ -49,20 +41,7 @@
                             <div class="h-profile-img-area">
                                 <img class="h-profile-img" src="../../../src/png/profilereal.png" alt="profile-img">
                             </div>
-                            <a href="#">
-                                <div class="h-profile-tri"></div>
-                            </a>
-                            <div class="profile-menu-area" style="display:none">
-                                <div class="pro-menu-info">
-                                    <a class="dropdown-nickname" href="#" target="_self">Seunghyun Lee</a>
-                                </div>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="page-home.html" target="_self">Home</a>
-                                <a class="dropdown-item" href="page-profile.html" target="_self">Profile</a>
-                                <a class="dropdown-item" href="page-pages.html" target="_self">Pages</a>
-                                <a class="dropdown-item" href="page-tags.html" target="_self">Tags</a>
-                                <a class="dropdown-item" href="page-about.html" target="_self">About</a>
-                            </div>
+                            <div class="h-profile-tri"></div>
                         </div>
                     </div>
                 </div>
@@ -140,22 +119,89 @@
                     </div>
                 </div>
                 <div class="cont-middle-article">
-                    <div class="article-title">Welcome to Seunghyun's Page!</div>
-                    <!--<script>
-                        function doDisplay(){
-                            var con = document.getElementById("myDIV");
-                            if(con.style.display=='none'){
-                                con.style.display = 'block';
-                            }else{
-                                con.style.display = 'none';
-                            }
-                        }
-                    </script>
-                    <a href="javascript:doDisplay();">내용보기</a><br/><br/>
-                    <div id="myDIV" style="background: white">
-                        <h1>내용을 접거나 펴는 방법</h1>
-                        <p>display block 속성값은 내부 요소를 나타나게 하며 none 는 사라지게 합니다.</p>
-                    </div>-->
+                    <div class="article-title"># Web</div>
+                    <div class="article-area">
+                        <a href="../articles/article-about-web.html" target="_self">
+                            <div class="title-25px down-padding_20px">About Web</div>
+                        </a>
+                        <div class="normal-article down-padding_0px">
+                            <p class="down-padding_25px left-padding_2px">
+                                What is Web? Web은 World Wide Web(WWW)를 줄여 부르는 용어로서, 인터넷에 연결된 컴퓨터를 이용해 사람들과
+                                정보를 공유할 수 있는 거미줄(Web)처럼 얼기설기 엮인 공간을 뜻하는 용어다. HTTP 프로토콜을 기반으로 HTML로 작성된 하이퍼텍스트 페이지를
+                                '웹 브라...
+                            </p>
+                        </div>
+                        <div class="article-tag-area">
+                            <div class="pages-info-area">Lemienne · 2023년 5월 10일</div>
+                            <a href="page-tags-web.html" target="_self">
+                                <div class="tag-web">Web</div>
+                            </a>
+                            <a href="page-tags-frontend.html" target="_self">
+                                <div class="tag-frontend">Front-end</div>
+                            </a>
+                        </div>
+                        <div class="pages-divider"><hr></div>
+                        <a href="../articles/article-frontend.html" target="_self">
+                            <div class="title-25px down-padding_20px">Front-end</div>
+                        </a>
+                        <div class="normal-article down-padding_0px">
+                            <p class="down-padding_25px left-padding_2px">
+                                Front-end & Back-end. 프로그래밍에서 프론트엔드는 컴퓨터 소프트웨어에서 사용자와 상호작용하는 부분을 지칭한다.
+                                그 반대로 백엔드는 사용자의 입력을 받고 처리하는 부분을 말한다. 프론트엔드 백엔드는 거의 대부분 웹 프로그래밍을 지칭한다.
+                                본 개념이 웹에만 존재하는 것은...
+                            </p>
+                        </div>
+                        <div class="article-tag-area">
+                            <div class="pages-info-area">Lemienne · 2023년 5월 11일</div>
+                            <a href="page-tags-web.html" target="_self">
+                                <div class="tag-web">Web</div>
+                            </a>
+                            <a href="page-tags-frontend.html" target="_self">
+                                <div class="tag-frontend">Front-end</div>
+                            </a>
+                        </div>
+                        <div class="pages-divider"><hr></div>
+                        <a href="../articles/article-backend.html" target="_self">
+                            <div class="title-25px down-padding_20px">Back-end</div>
+                        </a>
+                        <div class="normal-article down-padding_0px">
+                            <p class="down-padding_25px left-padding_2px">
+                                What is Back-end? 백엔드는 웹 사이트나 웹 애플리케이션 또는 모바일 솔루션의 프로세스와 관련된 서버 측(Server-side)과
+                                데이터베이스를 관리해주는 테크놀로지이다. 프론트엔드의 반대 말로, 백엔드는 눈에 보이지 않는 서버에서 작용하는 기술을 다룬다.
+                            </p>
+                        </div>
+                        <div class="article-tag-area">
+                            <div class="pages-info-area">Lemienne · 2023년 5월 12일</div>
+                            <a href="page-tags-web.html" target="_self">
+                                <div class="tag-web">Web</div>
+                            </a>
+                            <a href="page-tags-backend.html" target="_self">
+                                <div class="tag-back-end">Back-end</div>
+                            </a>
+                        </div>
+                        <div class="pages-divider"><hr></div>
+                        <a href="../articles/article-framework.html" target="_self">
+                            <div class="title-25px down-padding_20px">Web Framework</div>
+                        </a>
+                        <div class="normal-article down-padding_0px">
+                            <p class="down-padding_25px left-padding_2px">
+                                Library. 라이브러리는 소프트웨어의 구성요소 중 하나로, API를 기반으로 대상 환경(플랫폼)에서 바로 실행될 수 있도록 모듈화된 프로그램 모음이다.
+                                라이브러리는 혼자서 동작하는 완전한 프로그램이 아닌, 특정한 부분 기능만으로 수행하도록 제작된, 컴파일되어 기계어의 형대로 존...
+                            </p>
+                        </div>
+                        <div class="article-tag-area">
+                            <div class="pages-info-area">Lemienne · 2023년 5월 13일</div>
+                            <a href="page-tags-web.html" target="_self">
+                                <div class="tag-web">Web</div>
+                            </a>
+                            <a href="page-tags-frontend.html" target="_self">
+                                <div class="tag-frontend">Front-end</div>
+                            </a>
+                            <a href="page-tags-backend.html" target="_self">
+                                <div class="tag-back-end">Back-end</div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="cont-right-nav">
                     <div class="in-this-webpage">

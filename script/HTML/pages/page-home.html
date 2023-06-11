@@ -6,13 +6,17 @@
         <meta name="description" content="개발자 Seunghyun Lee의 개인 페이지입니다." />
         <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1" />
         <link rel="stylesheet" type="text/css" href="../../style/reset-css.css" />
+        <link rel="stylesheet" type="text/css" href="../../style/mode-changer.css" />
+        <!-- Light Mode CSS -->
         <link rel="stylesheet" type="text/css" href="../../style/desktop/dark-desktop.css" media="screen and (min-width: 1650px)"/>
-        <link rel="stylesheet" type="text/css" href="../../style/desktop/dark-desktop-under1650.css" media="screen and (min-width: 1200px) and (max-width: 1649px)"/>
+        <link rel="stylesheet" type="text/css" id="wizcss" href="../../style/desktop/light-desktop-under1650.css" media="screen and (min-width: 1200px) and (max-width: 1649px)"/>
         <link rel="stylesheet" type="text/css" href="../../style/desktop/dark-desktop-under1200.css" media="screen and (min-width: 960px) and (max-width: 1199px)"/>
         <link rel="stylesheet" type="text/css" href="../../style/tablet/tablet.css" media="screen and (min-width: 768px) and (max-width: 959px)"/>
         <link rel="stylesheet" type="text/css" href="../../style/phone/phone.css" media="screen and (max-width: 767px)"/>
+        <!-- JavaScript Files -->
         <script src="https://code.jquery.com/jquery-latest.min.js"></script>
         <script src="../../JavaScript/profile-fold-menu.js"></script>
+        <script src="../../JavaScript/darkmode-change-button.js"></script>
     </head>
     <body>
         <div id="page-wrapper">
@@ -20,16 +24,21 @@
                 <div id="page-logo-empty-1"></div>
                 <div id="page-logo-container">
                     <div class="page-logo-section">
-                        <a href="page-home.html"  target="_self">
+                        <a href="page-home.html" target="_self">
                             <div class="page-icon">
-                                <img src="../../../src/svg/homepage-icon-black.svg" alt="page icon">
+                                <img class="page-icon-icon" src="../../../src/svg/homepage-icon-black.svg" alt="page icon">
                             </div>
                             <div class="page-title">Seunghyun's Page</div>
                         </a>
                     </div>
                     <div class="header-functions">
                         <div class="header-themeChangeButton">
-                            <img src=../../../src/svg/Moon-black.svg alt="moon">
+                            <!--<a href="javascript:changeCSS('light-desktop-under1650')">
+                                <img src=../../../src/svg/Moon-black.svg alt="moon">
+                            </a>-->
+                            <button class="darkmode_btn" type="button">
+                                <img class="darkmode-moon" src=../../../src/svg/Moon-black.svg alt="moon">
+                            </button>
                         </div>
                         <div class="header-searchbar">
                             <div class="bar">
@@ -77,79 +86,64 @@
 
                         <div class="nav-home">
                             <a href="page-home.html" target="_self">
-                                <img src="../../../src/svg/Home-icon-black.svg" alt="home-img">
-                                <span>Home</span>
+                                <img class="nav-home-icon" src="../../../src/svg/Home-icon-black.svg" alt="home-img">
+                                <span class="nav-home-span">Home</span>
                             </a>
                         </div>
 
                         <div class="nav-profile">
                             <a href="page-profile.html" target="_self">
-                                <img src="../../../src/svg/Profile-icon-black.svg" alt="profile-icon">
-                                <span>Profile</span>
+                                <img class="nav-profile-icon" src="../../../src/svg/Profile-icon-black.svg" alt="profile-icon">
+                                <span class="nav-profile-span">Profile</span>
                             </a>
                         </div>
 
                         <div class="nav-pages">
                             <a href="page-pages.html" target="_self">
-                                <img src="../../../src/svg/Pages-icon-black.svg" alt="pages-icon">
-                                <span>Pages</span>
+                                <img class="nav-pages-icon" src="../../../src/svg/Pages-icon-black.svg" alt="pages-icon">
+                                <span class="nav-pages-span">Pages</span>
                             </a>
                         </div>
 
                         <div class="nav-tages">
                             <a href="page-tags.html" target="_self">
-                                <img src="../../../src/svg/Tags-icon-black.svg" alt="tags-icon">
-                                <span>Tags</span>
+                                <img class="nav-tages-icon" src="../../../src/svg/Tags-icon-black.svg" alt="tags-icon">
+                                <span class="nav-tages-span">Tags</span>
                             </a>
                         </div>
 
                         <div class="nav-about">
                             <a href="page-about.html" target="_self">
-                                <img src="../../../src/svg/About-icon-black.svg" alt="about-icon">
-                                <span>About</span>
+                                <img class="nav-about-icon" src="../../../src/svg/About-icon-black.svg" alt="about-icon">
+                                <span class="nav-about-span">About</span>
                             </a>
                         </div>
                     </div>
                     <div class="container-profileFooterArea">
                         <div class="github-icon">
                             <a href="https://github.com/Lemienne" target="_blank">
-                                <img src="../../../src/svg/Github-icon-black.svg" alt="github icon">
+                                <img class="nav-github-icon" src="../../../src/svg/Github-icon-black.svg" alt="github icon">
                             </a>
                         </div>
                         <div class="mail-icon">
                             <a href="mailto:lemiennelee@gmail.com" target="_blank">
-                                <img src="../../../src/svg/Mail-icon-black.svg" alt="mail icon">
+                                <img class="nav-mail-icon" src="../../../src/svg/Mail-icon-black.svg" alt="mail icon">
                             </a>
                         </div>
                         <div class="theme_change-icon">
                             <a href="../../Theme_white/HTML/white_main-page.html" target="_self">
-                                <img src="../../../src/svg/Moon-black.svg" alt="theme change icon">
+                                <img class="nav-theme-change-icon" src="../../../src/svg/Moon-black.svg" alt="theme change icon">
                             </a>
                         </div>
                         <div class="search_web-icon">
                             <a href="page-search.html" target="_self">
-                                <img src="../../../src/svg/Search_icon-black.svg" alt="search web icon">
+                                <img class="nav-search-icon" src="../../../src/svg/Search_icon-black.svg" alt="search web icon">
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="cont-middle-article">
                     <div class="article-title">Welcome to Seunghyun's Page!</div>
-                    <!--<script>
-                        function doDisplay(){
-                            var con = document.getElementById("myDIV");
-                            if(con.style.display=='none'){
-                                con.style.display = 'block';
-                            }else{
-                                con.style.display = 'none';
-                            }
-                        }
-                    </script>
-                    <a href="javascript:doDisplay();">내용보기</a><br/><br/>
-                    <div id="myDIV" style="background: white">
-                        <h1>내용을 접거나 펴는 방법</h1>
-                        <p>display block 속성값은 내부 요소를 나타나게 하며 none 는 사라지게 합니다.</p>
-                    </div>-->
                 </div>
                 <div class="cont-right-nav">
                     <div class="in-this-webpage">

@@ -6,17 +6,11 @@
         <meta name="description" content="개발자 Seunghyun Lee의 개인 페이지입니다." />
         <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1" />
         <link rel="stylesheet" type="text/css" href="../../style/reset-css.css" />
-        <link rel="stylesheet" type="text/css" href="../../style/mode-changer.css" />
-        <!-- Light Mode CSS -->
         <link rel="stylesheet" type="text/css" href="../../style/desktop/dark-desktop.css" media="screen and (min-width: 1650px)"/>
-        <link rel="stylesheet" type="text/css" id="wizcss" href="../../style/desktop/light-desktop-under1650.css" media="screen and (min-width: 1200px) and (max-width: 1649px)"/>
+        <link rel="stylesheet" type="text/css" href="../../style/desktop/dark-desktop-under1650.css" media="screen and (min-width: 1200px) and (max-width: 1649px)"/>
         <link rel="stylesheet" type="text/css" href="../../style/desktop/dark-desktop-under1200.css" media="screen and (min-width: 960px) and (max-width: 1199px)"/>
         <link rel="stylesheet" type="text/css" href="../../style/tablet/tablet.css" media="screen and (min-width: 768px) and (max-width: 959px)"/>
         <link rel="stylesheet" type="text/css" href="../../style/phone/phone.css" media="screen and (max-width: 767px)"/>
-        <!-- JavaScript Files -->
-        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-        <script src="../../JavaScript/profile-fold-menu.js"></script>
-        <script src="../../JavaScript/darkmode-change-button.js"></script>
     </head>
     <body>
         <div id="page-wrapper">
@@ -24,18 +18,16 @@
                 <div id="page-logo-empty-1"></div>
                 <div id="page-logo-container">
                     <div class="page-logo-section">
-                        <a href="page-home.html" target="_self">
+                        <a href="page-home.html"  target="_self">
                             <div class="page-icon">
-                                <img class="page-icon-icon" src="../../../src/svg/homepage-icon-black.svg" alt="page icon">
+                                <img src="../../../src/svg/homepage-icon-black.svg" alt="page icon">
                             </div>
                             <div class="page-title">Seunghyun's Page</div>
                         </a>
                     </div>
                     <div class="header-functions">
                         <div class="header-themeChangeButton">
-                            <button class="darkmode_btn" type="button">
-                                <img class="darkmode-moon" src=../../../src/svg/Moon-black.svg alt="moon">
-                            </button>
+                            <img src=../../../src/svg/Moon-black.svg alt="moon">
                         </div>
                         <div class="header-searchbar">
                             <div class="bar">
@@ -49,20 +41,7 @@
                             <div class="h-profile-img-area">
                                 <img class="h-profile-img" src="../../../src/png/profilereal.png" alt="profile-img">
                             </div>
-                            <a href="#">
-                                <div class="h-profile-tri"></div>
-                            </a>
-                            <div class="profile-menu-area" style="display:none">
-                                <div class="pro-menu-info">
-                                    <a class="dropdown-nickname" href="#" target="_self">Seunghyun Lee</a>
-                                </div>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="page-home.html" target="_self">Home</a>
-                                <a class="dropdown-item" href="page-profile.html" target="_self">Profile</a>
-                                <a class="dropdown-item" href="page-pages.html" target="_self">Pages</a>
-                                <a class="dropdown-item" href="page-tags.html" target="_self">Tags</a>
-                                <a class="dropdown-item" href="page-about.html" target="_self">About</a>
-                            </div>
+                            <div class="h-profile-tri"></div>
                         </div>
                     </div>
                 </div>
@@ -140,22 +119,80 @@
                     </div>
                 </div>
                 <div class="cont-middle-article">
-                    <div class="article-title">Welcome to Seunghyun's Page!</div>
-                    <!--<script>
-                        function doDisplay(){
-                            var con = document.getElementById("myDIV");
-                            if(con.style.display=='none'){
-                                con.style.display = 'block';
-                            }else{
-                                con.style.display = 'none';
-                            }
-                        }
-                    </script>
-                    <a href="javascript:doDisplay();">내용보기</a><br/><br/>
-                    <div id="myDIV" style="background: white">
-                        <h1>내용을 접거나 펴는 방법</h1>
-                        <p>display block 속성값은 내부 요소를 나타나게 하며 none 는 사라지게 합니다.</p>
-                    </div>-->
+                    <div class="article-title">About this Web page</div>
+                    <div class="article-nickname">
+                        <span>Lemienne</span>
+                        <span>&nbsp;·&nbsp; 날짜</span>
+                    </div>
+                    <div class="article-area">
+                        <div class="title-30px down-padding_34px">Seunghyun's Page?</div>
+                        <div class="normal-article down-padding_40px">
+                            <p class="down-padding_15px left-padding_2px">본 웹 페이지는 '웹 프로그래밍' 강의의 'TermProject #2 과제 제출 목적으로, HTML과 CSS를 활용하여 제작한 웹 페이지입니다.</p>
+                        </div>
+                        <div class="title-30px down-padding_34px">Functions</div>
+                        <div class="normal-article down-padding_40px">
+                            <p class="down-padding_15px left-padding_2px">페이지에 존재하는 기능들에 대하여 소개합니다.</p>
+                        </div>
+                        <div class="title-30px down-padding_40px">Header</div>
+                        <div class="title-20px down-padding_20px">· Page Icon</div>
+                        <div class="normal-article down-padding_20px">
+                            <p class="down-padding_15px left-padding_2px">- Home, 즉 메인 페이지로 돌아갈 수 있는 기능입니다.</p>
+                        </div>
+                        <div class="title-20px down-padding_20px">· Theme Change</div>
+                        <div class="normal-article down-padding_20px">
+                            <p class="down-padding_15px left-padding_2px">- Home, 즉 메인 페이지로 돌아갈 수 있는 기능입니다.</p>
+                        </div>
+                        <div class="title-20px down-padding_20px">· Pages</div>
+                        <div class="normal-article down-padding_20px">
+                            <p class="down-padding_15px left-padding_2px">- Home, 즉 메인 페이지로 돌아갈 수 있는 기능입니다.</p>
+                        </div>
+                        <div class="title-20px down-padding_20px">· Search</div>
+                        <div class="normal-article down-padding_20px">
+                            <p class="down-padding_15px left-padding_2px">- Home, 즉 메인 페이지로 돌아갈 수 있는 기능입니다.</p>
+                        </div>
+                        <div class="title-20px down-padding_20px">· Search Bar</div>
+                        <div class="normal-article down-padding_20px">
+                            <p class="down-padding_15px left-padding_2px">- Home, 즉 메인 페이지로 돌아갈 수 있는 기능입니다.</p>
+                        </div>
+                        <div class="title-20px down-padding_20px">· Profile</div>
+                        <div class="normal-article down-padding_40px">
+                            <p class="down-padding_15px left-padding_2px">- Home, 즉 메인 페이지로 돌아갈 수 있는 기능입니다.</p>
+                        </div>
+                        <div class="title-30px down-padding_34px">Left Profile</div>
+                        <div class="title-20px down-padding_20px">· Home</div>
+                        <div class="normal-article down-padding_20px">
+                            <p class="down-padding_15px left-padding_2px">- Home, 즉 메인 페이지로 돌아갈 수 있는 기능입니다.</p>
+                        </div>
+                        <div class="title-20px down-padding_20px">· Profile</div>
+                        <div class="normal-article down-padding_20px">
+                            <p class="down-padding_15px left-padding_2px">- 페이지 작성자의 Profile을 적어놓은 페이지로 이동하는 기능입니다.</p>
+                            <p class="down-padding_15px left-padding_2px">- 이 페이지에는 작성자의 간단한 인적사항, 자기소개서가 작성되어 있습니다.</p>
+                        </div>
+                        <div class="title-20px down-padding_20px">· Pages</div>
+                        <div class="normal-article down-padding_19px">
+                            <p class="down-padding_15px left-padding_2px">- Pages 페이지로 이동하는 기능입니다.</p>
+                            <p class="down-padding_15px left-padding_2px">- 홈페이지에 존재하는 모든 페이지들을 나열하여 볼 수 있는 공간입니다.</p>
+                        </div>
+                        <div class="title-20px down-padding_20px">· Tags</div>
+                        <div class="normal-article down-padding_19px">
+                            <p class="down-padding_15px left-padding_2px">- Tages 페이지로 이동하는 기능입니다.</p>
+                            <p class="down-padding_15px left-padding_2px">- 페이지들이 부여된 태그에 따라 분리되어 있어 손쉽게 원하는 주제의 페이지를 찾을 수 있습니다.</p>
+                        </div>
+                        <div class="title-20px down-padding_20px">· About</div>
+                        <div class="normal-article down-padding_40 px">
+                            <p class="down-padding_15px left-padding_2px">- About 페이지로 이동하는 기능입니다.</p>
+                            <p class="down-padding_15px left-padding_2px">- 본 웹 사이트를 설명하는 페이지로, 페이지 배경, 기능들에 대한 설명을 볼 수 있습니다.</p>
+                        </div>
+                        <div class="title-30px down-padding_40px">Right Navigation</div>
+                        <div class="title-20px down-padding_20px">· In this Web Page</div>
+                        <div class="normal-article down-padding_20px">
+                            <p class="down-padding_15px left-padding_2px">- Home, 즉 메인 페이지로 돌아갈 수 있는 기능입니다.</p>
+                        </div>
+                        <div class="title-20px down-padding_20px">· Page Tags</div>
+                        <div class="normal-article down-padding_20px">
+                            <p class="down-padding_15px left-padding_2px">- Home, 즉 메인 페이지로 돌아갈 수 있는 기능입니다.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="cont-right-nav">
                     <div class="in-this-webpage">
