@@ -335,6 +335,7 @@ html, body {
 .article-middleArticle {
     background: #fbfbfb;
     width: 1468px;
+    padding-right: 20px;
     flex: 1;
     overflow: auto;
 }

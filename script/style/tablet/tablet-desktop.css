@@ -620,9 +620,9 @@ html, body {
 .cont-middle-article {
     background: #fbfbfb;
     width: 1468px;
+    padding-right: 25px;
     flex: 1;
     overflow: auto;
-    padding-right: 20px;
 }
 
 .article-title {
