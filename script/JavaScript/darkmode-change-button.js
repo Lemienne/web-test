@@ -300,8 +300,9 @@ function darkmodeGo()
                 $(".article-middleArticle").removeClass("background-131313-dark");
                 $(".article-rightNavigation").removeClass("background-131313-dark");
 
-                $(".").removeClass("filter-invert");
-                $(".").removeClass("filter-invert");
+                $(".logo-empty-svg").removeClass("filter-invert-yes");
+
+                $(".sidebar-left-profile").removeClass("background-202020-dark");
                 $(".").removeClass("filter-invert");
                 $(".").removeClass("filter-invert");
                 $(".").removeClass("filter-invert");
@@ -412,6 +413,10 @@ function darkmodeGo()
                 $(".article-leftEmptySpace").addClass("background-131313-dark");
                 $(".article-middleArticle").addClass("background-131313-dark");
                 $(".article-rightNavigation").addClass("background-131313-dark");
+
+                $(".logo-empty-svg").addClass("filter-invert-yes");
+
+                $(".sidebar-left-profile").addClass("background-202020-dark");
             }
         })
         /*whatMode = localStorage.getItem('whatMode');
@@ -728,6 +733,10 @@ document.addEventListener('DOMContentLoaded',function() {
             $(".article-middleArticle").removeClass("background-131313-dark");
             $(".article-rightNavigation").removeClass("background-131313-dark");
 
+            $(".logo-empty-svg").removeClass("filter-invert-yes");
+
+            $(".sidebar-left-profile").removeClass("background-202020-dark");
+
             $(".").removeClass("filter-invert");
             $(".").removeClass("filter-invert");
             $(".").removeClass("filter-invert");
@@ -839,6 +848,10 @@ document.addEventListener('DOMContentLoaded',function() {
         $(".article-leftEmptySpace").addClass("background-131313-dark");
         $(".article-middleArticle").addClass("background-131313-dark");
         $(".article-rightNavigation").addClass("background-131313-dark");
+
+        $(".logo-empty-svg").addClass("filter-invert-yes");
+
+        $(".sidebar-left-profile").addClass("background-202020-dark");
 
     }
 })

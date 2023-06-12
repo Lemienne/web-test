@@ -114,3 +114,7 @@
 .filter-invert {
     filter: none !important;
 }
+
+.filter-invert-yes {
+    filter: invert(100%);
+}
