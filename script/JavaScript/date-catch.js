@@ -124,7 +124,7 @@ function status() {
             } else if (hours >= 16 && hours < 18) {
                 document.write("웹프로그래밍 : 듣는 중");
             } else {
-                document.write("취업전략수립및역량평가1 : 듣는 중");
+                document.write("휴식 중");
             }
             break;
         case 2 :
