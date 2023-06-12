@@ -17,6 +17,7 @@
         <script src="https://code.jquery.com/jquery-latest.min.js"></script>
         <script src="../../JavaScript/profile-fold-menu.js"></script>
         <script src="../../JavaScript/darkmode-change-button.js"></script>
+        <script src="../../JavaScript/date-catch.js"></script>
     </head>
     <body>
         <div id="page-wrapper">
@@ -144,6 +145,18 @@
                 </div>
                 <div class="cont-middle-article">
                     <div class="article-title">Welcome to Seunghyun's Page!</div>
+                    <div class="article-area top-padding_30px">
+                            <div class="title-30px">Current Time</div>
+                            <div class="normal-article">
+                                <p class="normal-article left-padding_2px">
+                                    <script>
+                                        theDate();
+                                    </script>
+                                </p>
+                                <h1 id="clock"></h1>
+                                <script src="../../JavaScript/clock.js"></script>
+                            </div>
+                    </div>
                 </div>
                 <div class="cont-right-nav">
                     <div class="in-this-webpage">

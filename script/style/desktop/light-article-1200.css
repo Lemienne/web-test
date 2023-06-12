@@ -1489,4 +1489,7 @@ hr.footer-nav-hr {
     line-height: 40px;
 }
 
-.dark
+.active {
+    color: lime;
+    font-weight: 600;
+}
