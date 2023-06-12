@@ -121,15 +121,15 @@ html, body {
 }
 
 .page-title {
-    width: 233px;
+    width: 268px;
     height: 30px;
     padding: 3px 0 3px 8px;
     align-content: center;
 
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
+    font-weight: 600;
+    font-size: 24px;
     line-height: 30px;
     display: flex;
     align-items: center;
