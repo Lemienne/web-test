@@ -1141,8 +1141,8 @@ hr.footer-nav-hr {
     margin-bottom: 15px;
 }
 .tag-web {
-    width: 58px;
-    height: 29px;
+    width: 30px;
+    height: 21px;
 
     background: #f3f3f3;
     border-radius: 30px;
@@ -1161,8 +1161,8 @@ hr.footer-nav-hr {
     margin-right: 15px;
 }
 .tag-frontend {
-    width: 99px;
-    height: 29px;
+    width: 70px;
+    height: 21px;
 
     background: #f3f3f3;
     border-radius: 30px;
@@ -1181,8 +1181,8 @@ hr.footer-nav-hr {
     margin-right: 15px;
 }
 .tag-back-end {
-    width: 94px;
-    height: 29px;
+    width: 65px;
+    height: 21px;
 
     background: #f3f3f3;
     border-radius: 30px;
