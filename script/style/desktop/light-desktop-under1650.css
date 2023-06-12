@@ -52,7 +52,7 @@ html, body {
         justify-content: center;
     }
     .logo-empty-svg {
-        display: block;
+        display: none;
     }
 }
 
