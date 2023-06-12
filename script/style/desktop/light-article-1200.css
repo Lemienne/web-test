@@ -205,6 +205,8 @@ html, body {
 }
 
 .profile-menu-area {
+    position: absolute;
+    right: 0px;
     margin: 50px 0 0 0;
     padding: 10px 0;
     width: 150px;
