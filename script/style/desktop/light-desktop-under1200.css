@@ -11,6 +11,27 @@ html, body {
         display: none;
         /*overflow: hidden;*/
     }
+
+    #page-logo-empty-2 {
+        width: 50px;
+        flex: 0 0 50px;
+        background: #fbfbfb;
+    }
+
+    .cont-right-nav {
+        background: #fbfbfb;
+        width: 85px;
+        flex: 0 0 85px;
+        display: flex;
+    }
+
+    .in-this-webpage {
+        display: none;
+    }
+
+    .page-tags-main_page {
+        display: none;
+    }
 }
 
 #page-wrapper {
