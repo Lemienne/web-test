@@ -55,11 +55,11 @@ function statusTime() {
             break;
         case 3 :
             day = "수요일";
-            if(hours >= 9 && hours < 10) {
+            if(hours >= 9 && hours < 11) {
                 document.write(day + "&nbsp&nbsp·&nbsp&nbsp");
                 document.write("웹프로그래밍 : 듣는 중");
             }
-            else if (hours >= 10 && hours < 12) {
+            else if (hours >= 11 && hours < 13) {
                 document.write(day + "&nbsp&nbsp·&nbsp&nbsp");
                 document.write("디지털논리회로 : 듣는 중");
             }
@@ -74,7 +74,7 @@ function statusTime() {
             break;
         case 4 :
             day = "목요일";
-            if(hours >= 10 && hours < 12) {
+            if(hours >= 10 && hours < 13) {
                 document.write(day + "&nbsp&nbsp·&nbsp&nbsp");
                 document.write("프로그래밍실습 : 듣는 중");
             }
