@@ -606,6 +606,7 @@ html, body {
 .cont-middle-article {
     background: #fbfbfb;
     width: 1468px;
+    padding-right: 20px;
     flex: 1;
     overflow: auto;
 }
@@ -997,7 +998,6 @@ html, body {
     margin: 20px 0px;
     padding: 10px 20px 10px 20px;
     background-color: #f3f3f3;
-    width: 1000px;
     border-left: solid 4px #92D8FF;
     color: #131313;
 }
